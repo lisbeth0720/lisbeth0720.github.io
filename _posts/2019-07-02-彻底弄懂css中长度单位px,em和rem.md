@@ -1,5 +1,19 @@
+---
+layout:     post
+title:     彻底弄懂css中长度单位px,em和rem
+subtitle:    "彻底弄懂css中长度单位px,em和rem"
+date:       2019-07-02
+author:     lisbeth
+header-img: img/post_04.jpg
+catalog: true
+tags:
+    - css
+---
+>每天进步一点点！
+
 国内的设计师大都喜欢用px，而国外的网站大都喜欢用em和rem，那么三者有什么区别，又各自有什么优劣呢？
-PX特点
+
+**PX特点**
 
 -1. IE无法调整那些使用px作为单位的字体大小；
 
