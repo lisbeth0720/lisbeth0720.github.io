@@ -1,7 +1,7 @@
 ---
 layout:     post
-title:     彻底弄懂css中长度单位px,em和rem
-subtitle:    "彻底弄懂css中长度单位px,em和rem"
+title:     彻底弄懂css中长度单位px,em和rem的区别
+subtitle:    "px,em和rem的区别"
 date:       2019-07-02
 author:     lisbeth
 header-img: img/post_04.jpg
