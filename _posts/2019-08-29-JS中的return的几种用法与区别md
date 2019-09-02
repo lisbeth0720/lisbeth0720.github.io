@@ -1,14 +1,15 @@
 ---
 layout:     post
 title:      JS中的return,return ture,return false的区别
-subtitle:    "Jreturn,return ture,return false的区别"
-date:       2019-03-23
+subtitle:    "总结"
+date:       2019-08-30
 author:     lisbeth
-header-img: img/post-05.jpg
+header-img: img/post-bg-desk.jpg
 catalog: true
 tags:
     - JS
 ---
+
 > 书山有路勤为径，学海无涯苦作舟！
 
 一、返回控制与函数结果，
