@@ -1,13 +1,13 @@
 ---
 layout:     post
-title:     了解onFocus="this.blur()"
-subtitle:    "onFocus="this.blur()"
+title:      了解onFous="this.blur()"
+subtitle:    "onFous"
 date:       2019-09-27
 author:     沐雪
 header-img: img/wxq_01.jpg
 catalog: true
 tags:
-    - js
+    - JS
 ---
 
 > 未来可期！
