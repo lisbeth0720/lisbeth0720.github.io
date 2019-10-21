@@ -27,9 +27,13 @@ tags:
 
 　　以下情况只能用id：
 1. label与form控件的关联,
+
+```
     <label for="MyInput">My Input</label>
-     <input id="MyInput" type="text">
+     <input id="MyInput" type="text"> ```
+
      for属性指定与label关联的元素的id,不可用name替代。
+
 2. CSS的元素选择机制，以#MyId的方式指定应用样式的元素,不能用name替代。
 3. 脚本中获得对象:
 IE支持在脚本中直接以id(而不是name)引用该id标识的对象。例如上面的input,要在脚本中获得输入的内容,可以直接以MyInput.value来获得。
