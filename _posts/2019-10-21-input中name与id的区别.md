@@ -14,18 +14,22 @@ tags:
 
 一直很困惑，表单里面input标签有id和name,它们之间到底有什么区别自己很少去想，只知道一般的场景该怎么使用，今天就在网上搜索了一下，自己也总结一下。为什么有了ID还要有Name呢?其实ID就像是一个人的身份证号码，而Name就像是他的名字，ID显然是唯一的，而Name是可以重复的。
 
-　　name与id的还有区别是：
-　　id要符合标识的要求,比如大小写敏感,最好不要包含下划线(因为不兼容CSS)。而name基本上没有什么要求,甚至可以用数字。
-　　补充：name主要是表单元素里才有的属性。通过js的document.表单名称.文本框.value来获取文本框的值，其中的表单名称和文本框名称指的是name,而非表单元素例如div，span等是没有name属性的，而id属性是任何一个HTML元素都会有的。当你需要用js获取非表单元素对象是就得用document.getElementByIdx("id")
+　　**name与id的还有区别是：**
+  
+id要符合标识的要求,比如大小写敏感,最好不要包含下划线(因为不兼容CSS)。而name基本上没有什么要求,甚至可以用数字。
+补充：name主要是表单元素里才有的属性。通过js的document.表单名称.文本框.value来获取文本框的值，其中的表单名称和文本框名称指的是name,而非表单元素例如div，span等是没有name属性的，而id属性是任何一个HTML元素都会有的。当你需要用js获取非表单元素对象是就得用document.getElementByIdx("id")
 
-　　 name在以下用途是不能替代的：
+　　**name在以下用途是不能替代的：**
+   
 1. 表单(form)的控件名，提交的数据都用控件的name而不是id来控制。因为有许多name会同时对应多个控件,比如checkbox和radio, 而id必须是全文档中唯一的。此外浏览器会根据name来设定发送到服务器的request。因此如果用id，服务器是无法得到数据的。
 2. frame和window的名字,用于在其他frame或window指定target。
 
-　　以下两者可以通用，但是强烈建议用id不要用name：
+　　*以下两者可以通用，但是强烈建议用id不要用name：*
+  
 1. 锚点，通常以前写作<a name="myname">,现在可以用任何的元素id来指定:<div id="myid">。
 
-　　以下情况只能用id：
+　*以下情况只能用id：*
+  
 1. label与form控件的关联,
 
 ```
