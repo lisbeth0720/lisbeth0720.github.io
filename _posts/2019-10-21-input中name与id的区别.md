@@ -26,7 +26,7 @@ id要符合标识的要求,比如大小写敏感,最好不要包含下划线(因
 
 　　*以下两者可以通用，但是强烈建议用id不要用name：*
   
-1. 锚点，通常以前写作<a name="myname">,现在可以用任何的元素id来指定:<div id="myid">。
+1. 锚点，通常以前写作<a name="myname">,现在可以用任何的元素id来指定:```<div id="myid">```。
 
 　*以下情况只能用id：*
   
@@ -42,3 +42,4 @@ id要符合标识的要求,比如大小写敏感,最好不要包含下划线(因
 3. 脚本中获得对象:
 IE支持在脚本中直接以id(而不是name)引用该id标识的对象。例如上面的input,要在脚本中获得输入的内容,可以直接以MyInput.value来获得。
 如果用DOM的话,则用document.getElementById("MyInput").value,如果要用name的话,通常先得到包含控件的form,例如document.forms[0]，然后从form再引用name,注意这样得到的是经过计算后将发送给服务器的值。
+
