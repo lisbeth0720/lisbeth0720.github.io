@@ -1,0 +1,37 @@
+---
+layout:     post
+title:      关于编写移动端页面遇到的坑与总结
+subtitle:    "移动端布局"
+date:       2019-10-30
+author:     沐雪
+header-img: img/2019-10-30.jpg
+catalog: true
+tags:
+    - 移动端布局
+---
+
+> 优秀的判断力来自经验，但经验来自于错误的判断。！
+
+
+最近这两天跟着公司的进展做会议室预约项目，我负责移动端前端页面的编写与测试，虽然以前接触过移动端布局，但只是简单的
+
+做些网页，未又更深的涉及，这次公司的项目算是我真正意义上的深入了解与运用移动端布局，通过这个项目我收获颇多，比如
+
+1.```<head>```标签里
+   ```
+    <meta content="yes" name="apple-mobile-web-app-capable"/>
+    <meta name="viewport" content="width=device-width,height=device-height,inital-scale=1.0,maximum-scale=1.0,user-scalable=no;"/>
+   ```
+的作用。
+
+对于
+``` <meta name="viewport" content="width=device-width,height=device-height,inital-scale=1.0,maximum-scale=1.0,user-scalable=no;"/>```
+
+这个想必大家都知道，当页面在手机上显示时，增加这个meta可以让页面强制让文档的宽度与设备的宽度保持1:1，并且文档最大的宽度比例是1.0，且不允许用户点击屏幕放大浏览。
+
+
+2.移动端click事件300ms延迟
+
+　click事件，在移动端，会经过300ms的延迟后才触发。原因是，移动浏览器提供一个特殊的功能：双击（double tap）放大，用户碰触页面之后，需要等待一段时间来判断是不是双击（double tap）动作，而不是立即响应单击（click），等待的这段时间大约是300ms。
+
+总结：通过这次项目我又掌握了许多以前不曾了解到的知识，又丰富了自己的技术栈，感觉收获颇多，加油！未来可期待。
