@@ -1,4 +1,17 @@
+---
+layout:     post
+title:     vue中组件间常用的几种传值方式
+subtitle:    "ES6"
+date:       2020-07-11
+author:     lisbeth
+header-img: img/2019-12-19-backhround.jpg
+catalog: true
+tags:
+    - vue
+---
 
+>戒能生定，定能生慧。
+基本用法
 
 主要分为两类：
 
